@@ -1,8 +1,8 @@
-# Your Name Here
+# Luke Jackson
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
+# 6/10/24
+# Lab 04
+# Lab Section: 14
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -98,8 +98,24 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+M_temp = 0
+for Temp in max_temps:
+    M_temp = M_temp + Temp
+M_temp = M_temp / len(max_temps)
+print(f"Average max temp in Wyoming is {M_temp}")
+
+m_temp = 0
+for temp in min_temps:
+    m_temp = m_temp + temp
+m_temp = m_temp / len(min_temps)
+print(f"Average min temp in Wyoming is {round(m_temp,1)}")
 
 # For the next part, determine the highest and lowest recorded temperatures.
+MaxIndex = max(max_temps)
+print(f"The max recorded temp in wyoming is {MaxIndex}")
+
+MinIndex = min(min_temps)
+print(f"The min recorded temp in Wyoming is {MinIndex}")
 # HINT: You can find this information without using any logic or looping.
 
 
